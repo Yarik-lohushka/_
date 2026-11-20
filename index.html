@@ -1,76 +1,75 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#100820">
-  <title>Линейка Prize — розыгрыш</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100b1d">
+<title>SUPER PRIZE — портал невероятных выигрышей</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="glow glow-one"></div><div class="glow glow-two"></div>
-  <header class="topbar">
-    <a class="brand" href="#"><span class="brand-mark">✦</span> ЛИНЕЙКА <span class="brand-light">PRIZE</span></a>
-    <nav><a href="#prizes">Призы</a><a href="#how">Как это работает</a></nav>
-    <span class="live"><i></i> РОЗЫГРЫШ ДНЯ</span>
-  </header>
+<div class="ambient a1"></div><div class="ambient a2"></div>
+<header class="header">
+  <a class="logo" href="#top"><span>✦</span> SUPER PRIZE</a>
+  <nav><a href="#prizes">Призы</a><a href="#stages">Испытания</a><a href="#about">О проекте</a></nav>
+  <button class="small-btn" id="soundBtn" aria-label="Звук">♫ Звук: выкл.</button>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow"><span>✦</span> ТВОЙ СЧАСТЛИВЫЙ МОМЕНТ</div>
-        <h1>Удача уже<br><em>на твоей стороне.</em></h1>
-        <p class="lead">Крути линейку, проверь свою удачу и узнай, какой сюрприз тебя ждёт.</p>
-        <button class="primary" id="startBtn">Проверить удачу <span>↗</span></button>
-        <div class="trust-row"><span>✧ Без регистрации</span><span>⚡ Один шанс</span><span>🎁 Сюрприз внутри</span></div>
-      </div>
-      <div class="hero-art">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="hero-image-wrap"><img src="images/hero-phone.jpg" alt="Иллюстрация смартфона и фиолетового свечения"></div>
-        <div class="floating-tag tag-top">★ ПРИЗ ДНЯ</div>
-        <div class="floating-tag tag-bottom">ТВОЙ ШАНС ✨</div>
-      </div>
-    </section>
-
-    <section class="ticker"><span>✦</span> МЕЧТЫ СБЫВАЮТСЯ <b>•</b> ЛОВИ МОМЕНТ <b>•</b> УДАЧА РЯДОМ <b>•</b> МЕЧТЫ СБЫВАЮТСЯ <span>✦</span></section>
-
-    <section class="game-section" id="game">
-      <div class="section-heading"><div class="eyebrow">МИНИ-ИГРА</div><h2>Испытай свою <em>удачу</em></h2><p>Нажми на кнопку и узнай результат.</p></div>
-      <div class="game-card">
-        <div class="wheel-area">
-          <div class="pointer">▼</div>
-          <div class="wheel" id="wheel"><div class="wheel-center">✦</div><span class="wlabel l1">iPhone</span><span class="wlabel l2">Подарок</span><span class="wlabel l3">AirPods</span><span class="wlabel l4">Сюрприз</span></div>
-        </div>
-        <div class="game-copy"><div class="pill">ТВОЯ ПОПЫТКА: 1</div><h3 id="gameTitle">Ну что, крутим?</h3><p id="gameText">Колесо уже готово. Осталось нажать одну кнопку.</p><button class="primary" id="spinBtn">Крутить колесо <span>⟳</span></button><div class="fineprint">Демо-розыгрыш для развлечения · никаких данных вводить не нужно</div></div>
-      </div>
-    </section>
-
-    <section class="prizes" id="prizes">
-      <div class="section-heading"><div class="eyebrow">ЧТО МОЖНО ВЫИГРАТЬ</div><h2>Призы, от которых <em>вау</em></h2></div>
-      <div class="prize-grid">
-        <article class="prize-card featured"><div class="prize-art"><img src="images/prize-phone.jpg" alt="Иллюстрация смартфона"></div><div class="prize-info"><small>ГЛАВНЫЙ ПРИЗ</small><h3>Новый смартфон</h3><p>Мечта в стильной коробке.</p></div><span class="number">01</span></article>
-        <article class="prize-card"><div class="prize-art"><img src="images/earbuds.jpg" alt="Иллюстрация наушников"></div><div class="prize-info"><small>ПРИЗ №2</small><h3>Наушники</h3><p>Чтобы музыка была громче.</p></div><span class="number">02</span></article>
-        <article class="prize-card"><div class="prize-art"><img src="images/gift.jpg" alt="Иллюстрация подарка"></div><div class="prize-info"><small>СЕКРЕТНЫЙ ПРИЗ</small><h3>Таинственный подарок</h3><p>Интрига — наше всё.</p></div><span class="number">03</span></article>
-      </div>
-    </section>
-
-    <section class="how" id="how"><div class="section-heading"><div class="eyebrow">ВСЁ ПРОСТО</div><h2>Три шага до <em>интриги</em></h2></div>
-      <div class="steps"><div><b>01</b><h3>Нажми «Крутить»</h3><p>Запусти праздничное колесо.</p></div><div><b>02</b><h3>Дождись результата</h3><p>Система проверит твою удачу.</p></div><div><b>03</b><h3>Узнай правду</h3><p>Самое интересное — в финале.</p></div></div>
-    </section>
-  </main>
-  <footer><span class="brand">✦ ЛИНЕЙКА PRIZE</span><span>Учебный шуточный сайт. Не является настоящей акцией.</span></footer>
-
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-card">
-      <div class="confetti">✦ ✧ ✦ ✧ ✦</div>
-      <div class="eyebrow" id="modalEyebrow">РЕЗУЛЬТАТ ГОТОВ</div>
-      <h2 id="modalTitle">ПОЗДРАВЛЯЕМ!</h2>
-      <p id="modalText">Кажется, удача выбрала тебя…</p>
-      <div class="reveal" id="reveal">ТЫ ВЫИГРАЛ… <strong>ПОЧЁТНОЕ ПРАВО УБРАТЬ ЛИНЕЙКУ НА МЕСТО 😂</strong></div>
-      <button class="primary" id="closeBtn">Ладно, поймал 😭</button>
-      <small>Это шуточный сайт, настоящий приз не разыгрывается.</small>
-    </div>
+<main id="top">
+<section class="hero wrap">
+  <div class="hero-text">
+    <div class="eyebrow"><i></i> МЕЖДУНАРОДНЫЙ ПОРТАЛ УДАЧИ</div>
+    <h1>Твоя удача.<br><em>Твои странные призы.</em></h1>
+    <p>Добро пожаловать в место, где возможно всё. Даже выиграть то, о чём ты никогда не просил.</p>
+    <button class="cta" data-go="stage1">Начать участие <b>↗</b></button>
+    <div class="hero-meta"><span>✦ 100% загадочности</span><span>⚡ 0% здравого смысла</span><span>♧ Без регистрации</span></div>
   </div>
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="hero-visual">
+    <div class="halo"></div><div class="hero-orbit"></div>
+    <div class="hero-card"><div class="hero-card-top">PRIZE DROP <span>№ 001</span></div><div class="hero-emoji">🎁</div><div class="hero-card-bottom">НЕИЗВЕСТНОСТЬ ВНУТРИ</div></div>
+    <div class="float f1">★ УДАЧА ONLINE</div><div class="float f2">ТВОЙ ДЕНЬ?</div>
+  </div>
+</section>
+
+<div class="ticker"><span>✦ СЛУЧАЙНОСТЬ</span><b>•</b><span>СЮРПРИЗЫ</span><b>•</b><span>НЕОЖИДАННОСТЬ</span><b>•</b><span>✦ СЛУЧАЙНОСТЬ</span></div>
+
+<section class="wrap section" id="prizes">
+  <div class="section-head"><div class="eyebrow">КАТАЛОГ НЕВЕРОЯТНОГО</div><h2>Призы, которые <em>тебя не просили</em></h2><p>Коллекция уникальных предметов. Некоторые из них даже существуют.</p></div>
+  <div class="prize-grid" id="prizeGrid"></div>
+  <div class="center"><button class="outline-btn" id="morePrizes">Показать ещё странностей ↻</button></div>
+</section>
+
+<section class="wrap section" id="stages">
+  <div class="section-head"><div class="eyebrow">ПУТЬ ПОБЕДИТЕЛЯ</div><h2>Пройди <em>проверку удачи</em></h2><p>Каждый этап приближает тебя к… чему-то.</p></div>
+  <div class="progress"><div id="progressFill"></div></div><div class="progress-label"><span id="progressText">Этап 0 из 7</span><span id="progressPct">0%</span></div>
+  <div class="stage-card" id="stageCard">
+    <div class="stage-number" id="stageNumber">ЭТАП 01 / 07</div>
+    <h3 id="stageTitle">Проверка на готовность</h3>
+    <p id="stageDesc">Насколько сильно ты хочешь получить невероятный приз?</p>
+    <div id="stageBody" class="stage-body"></div>
+    <div class="stage-actions"><button class="cta" id="stageNext">Продолжить <b>→</b></button><span class="micro" id="stageHint">Ошибиться невозможно. Наверное.</span></div>
+  </div>
+</section>
+
+<section class="wrap section bonus">
+  <div class="bonus-copy"><div class="eyebrow">СЛУЧАЙНЫЙ СЮРПРИЗ</div><h2>Не знаешь, чего хочешь?<br><em>Мы тоже.</em></h2><p>Нажми кнопку и получи предмет, который изменит… ничего.</p><button class="cta" id="randomBtn">Выдать случайный приз ✦</button></div>
+  <div class="bonus-result" id="randomResult"><div class="bonus-icon">?</div><strong>ТВОЙ СЮРПРИЗ ЗДЕСЬ</strong><small>Нажми кнопку слева</small></div>
+</section>
+
+<section class="wrap section" id="about">
+  <div class="section-head"><div class="eyebrow">ВАЖНАЯ ИНФОРМАЦИЯ</div><h2>Официально <em>неофициально</em></h2></div>
+  <div class="info-grid"><div><b>01 / Честность</b><p>Случайность настолько случайная, что удивляется даже сама себе.</p></div><div><b>02 / Доставка</b><p>Возможна доставка воображаемым транспортом.</p></div><div><b>03 / Поддержка</b><p>Наш оператор — искусственный интеллект на основе варёной картошки.</p></div></div>
+</section>
+</main>
+
+<footer><a class="logo" href="#top">✦ SUPER PRIZE</a><span>Шуточный интерактивный сайт. Настоящие призы не разыгрываются.</span><button class="text-btn" id="secretBtn">не нажимать</button></footer>
+
+<div class="toast" id="toast"></div>
+<div class="modal" id="modal" aria-hidden="true"><div class="modal-card">
+  <div class="modal-spark">✦ ✧ ✦</div><div class="eyebrow" id="modalEyebrow">РЕЗУЛЬТАТ ПОДТВЕРЖДЁН</div>
+  <h2 id="modalTitle">НЕВЕРОЯТНО!</h2><p id="modalDesc">Система завершила проверку.</p>
+  <div class="final-prize"><div id="finalEmoji">🥔</div><small>ВАШ ЭКСКЛЮЗИВНЫЙ РЕЗУЛЬТАТ</small><strong id="finalName">Картошка с характером</strong><span id="finalCaption">Серия ограничена. Причины тоже.</span></div>
+  <button class="cta" id="modalClose">Принять судьбу <b>✓</b></button>
+  <small class="disclaimer">Это шуточный сайт, никаких реальных выигрышей и платежей нет.</small>
+</div></div>
+<script src="script.js"></script>
+</body></html>
