@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100b18">
+  <meta name="description" content="SUPER PRIZE — официально неофициальный каталог совершенно ненужных, но исключительно важных вещей.">
+  <title>SUPER PRIZE® — Отдел невероятных совпадений</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="SUPER PRIZE — на главную">
+        <span class="logo-symbol">✳</span><span>SUPER<span class="logo-accent">PRIZE</span></span><sup>®</sup>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+        <a href="#catalog">Каталог</a><a href="#protocol">Протокол</a><a href="#chance">Колесо</a><a href="#secret-lab">Лаборатория</a>
+      </nav>
+      <div class="header-actions">
+        <span class="status"><i></i> СИСТЕМА В НОРМЕ*</span>
+        <button class="icon-button sound-toggle" id="soundToggle" type="button" aria-pressed="false" title="Звук выключен">♫<span class="sr-only">Включить звук</span></button>
+        <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Открыть меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> ОТДЕЛ НЕВЕРОЯТНЫХ СОВПАДЕНИЙ <span class="eyebrow-code">№ 000-ХЗ</span></div>
+        <h1 id="heroTitle">МЫ НЕ ЗНАЕМ,<br>ЗАЧЕМ ВАМ <em>ЭТО.</em><br><span class="outline-word">НО ОНО ВАШЕ.</span></h1>
+        <p class="hero-intro">Предметы исключительной бесполезности. Подобраны с точностью, не имеющей практического применения.</p>
+        <div class="hero-cta-row">
+          <a class="button button-primary" href="#catalog">Изучить каталог <span>↗</span></a>
+          <button class="button button-ghost" id="heroRandom" type="button">Удивить меня <span>✳</span></button>
+        </div>
+        <div class="hero-footnote">*Система считает себя в норме. Технический отдел воздержался от комментариев.</div>
+        <div class="hero-metrics" aria-label="Статистика проекта">
+          <div><strong data-count="17">17</strong><span>единиц<br>великолепия</span></div>
+          <div><strong>0</strong><span>практических<br>применений</span></div>
+          <div><strong>∞</strong><span>вопросов<br>без ответа</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-orbit orbit-1"></div><div class="hero-orbit orbit-2"></div>
+        <div class="hero-index">ЛОТ<br><b>№ 001</b></div>
+        <figure class="hero-frame">
+          <img src="assets/prize-01.jpg" alt="Загадочный предмет из коллекции SUPER PRIZE" fetchpriority="high" data-fallback="assets/prize-02.jpg">
+          <figcaption><span>ОБЪЕКТ ПОВЫШЕННОГО ВНИМАНИЯ</span><b>НЕОБЪЯСНИМО ДОРОГОЙ ВИД</b></figcaption>
+        </figure>
+        <div class="hero-sticker sticker-one">100%<small>НЕПОНЯТНО</small></div>
+        <div class="hero-sticker sticker-two">ОДОБРЕНО<br>КОМИССИЕЙ <b>?</b></div>
+        <div class="hero-cross cross-one">＋</div><div class="hero-cross cross-two">✳</div>
+      </div>
+      <div class="hero-bottom"><span>◆ СЕРТИФИЦИРОВАННАЯ СЛУЧАЙНОСТЬ</span><span>◆ БЕЗ СМЫСЛА, НО С РАЗМАХОМ</span><span>◆ РЕШЕНИЯ НЕ ПОДЛЕЖАТ ОБЪЯСНЕНИЮ</span></div>
+    </section>
+
+    <div class="ticker" aria-label="Бегущая строка"><div class="ticker-track"><span>КАРТОШКА ПРЕМИУМ</span><b>✳</b><span>КИРПИЧ С БИОГРАФИЕЙ</span><b>✳</b><span>УТКА РУКОВОДИТЕЛЬ</span><b>✳</b><span>ЛОДКА НА ВСЯКИЙ СЛУЧАЙ</span><b>✳</b><span>КАРТОШКА ПРЕМИУМ</span><b>✳</b><span>КИРПИЧ С БИОГРАФИЕЙ</span><b>✳</b><span>УТКА РУКОВОДИТЕЛЬ</span><b>✳</b><span>ЛОДКА НА ВСЯКИЙ СЛУЧАЙ</span><b>✳</b></div></div>
+
+    <section class="catalog section-wrap" id="catalog" aria-labelledby="catalogTitle">
+      <div class="section-heading">
+        <div><div class="eyebrow">01 / ОТДЕЛ МАТЕРИАЛЬНЫХ ЦЕННОСТЕЙ</div><h2 id="catalogTitle">КАТАЛОГ <em>ВОЗМОЖНОГО</em></h2></div>
+        <p>Каждый объект прошёл строгую проверку.<br>Проверяющий до сих пор не отвечает.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Найти что-нибудь ненужное…" autocomplete="off" aria-label="Поиск по каталогу"><kbd>/</kbd></label>
+        <label class="sort-box"><span>СОРТИРОВКА</span><select id="sortSelect" aria-label="Сортировка каталога"><option value="default">По степени странности</option><option value="az">По названию: А—Я</option><option value="za">По названию: Я—А</option><option value="random">Случайный порядок</option></select></label>
+      </div>
+      <div class="filter-row" id="filterRow" role="group" aria-label="Фильтры по категориям">
+        <button class="filter-chip active" data-filter="all" type="button">Все объекты <span>17</span></button>
+        <button class="filter-chip" data-filter="food" type="button">Еда</button>
+        <button class="filter-chip" data-filter="home" type="button">Для дома</button>
+        <button class="filter-chip" data-filter="status" type="button">Статус</button>
+        <button class="filter-chip" data-filter="transport" type="button">Транспорт</button>
+        <button class="filter-chip" data-filter="other" type="button">Прочее</button>
+        <button class="filter-chip favorites-filter" data-filter="favorites" type="button">♡ Избранное <span id="favoriteCount">0</span></button>
+      </div>
+      <div class="catalog-meta"><span id="resultsCount">17 ОБЪЕКТОВ НАЙДЕНО</span><span>АРХИВ: SP-2026 / СЕКТОР Б</span></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="catalog-footer"><button class="button button-outline" id="showMore" type="button">Показать ещё <span>＋</span></button><span class="catalog-disclaimer">Наличие не означает необходимость.</span></div>
+    </section>
+
+    <section class="manifesto" id="protocol">
+      <div class="section-wrap manifesto-inner">
+        <div class="manifesto-top"><span class="eyebrow">02 / КОРПОРАТИВНАЯ ФИЛОСОФИЯ</span><span class="manifesto-number">SP—002</span></div>
+        <h2>МЫ ВЕРИМ В ВЕЩИ.<br><em>ОСОБЕННО В СТРАННЫЕ.</em></h2>
+        <div class="manifesto-bottom"><p>В мире слишком много полезного. Мы решили восстановить баланс и представить коллекцию объектов, чья главная функция — вызывать уточняющие вопросы.</p><div class="seal">ОТДЕЛ<br><b>ОДОБРЕНИЯ</b><span>✳</span></div></div>
+      </div>
+    </section>
+
+    <section class="chance section-wrap" id="chance" aria-labelledby="chanceTitle">
+      <div class="chance-copy">
+        <div class="eyebrow">03 / МЕХАНИЗМ СУДЬБЫ</div>
+        <h2 id="chanceTitle">КОЛЕСО<br><em>НЕИЗБЕЖНОСТИ</em></h2>
+        <p>Система выберет предмет, который, вероятно, изменит ваш день. В какую сторону — не уточняется.</p>
+        <div class="warning-note"><span>!</span><p>ВНИМАНИЕ: колесо может выбрать картошку. Это предусмотрено регламентом.</p></div>
+        <button class="button button-primary" id="spinButton" type="button">ЗАПУСТИТЬ РОК <span>↻</span></button>
+        <div class="spin-status" id="spinStatus" role="status" aria-live="polite">ОЖИДАНИЕ РЕШЕНИЯ СУДЬБЫ</div>
+      </div>
+      <div class="wheel-stage">
+        <div class="wheel-pointer" aria-hidden="true">▼</div>
+        <div class="wheel" id="wheel" aria-label="Колесо случайных призов">
+          <div class="wheel-sector-labels"><span>🥔</span><span>🦆</span><span>🧱</span><span>👑</span><span>🧦</span><span>🚣</span><span>📦</span><span>🦈</span></div>
+          <div class="wheel-hub"><span>SP</span><small>®</small></div>
+        </div>
+        <div class="wheel-base"></div>
+        <div class="wheel-caption">СЕРТИФИЦИРОВАННЫЙ ГЕНЕРАТОР НЕОПРЕДЕЛЁННОСТИ</div>
+      </div>
+    </section>
+
+    <section class="protocol section-wrap">
+      <div class="section-heading"><div><div class="eyebrow">04 / ПРОЦЕДУРА ПОЛУЧЕНИЯ</div><h2>ТРИ ШАГА ДО <em>НЕИЗВЕСТНОСТИ</em></h2></div><p>Процедура проста.<br>Последствия не уточнялись.</p></div>
+      <div class="steps">
+        <article class="step-card"><span class="step-number">01</span><div class="step-icon">↗</div><h3>Выберите судьбу</h3><p>Нажмите кнопку. Система сделает вид, что всё рассчитала.</p><small>СТАТУС: ПРИНЯТО</small></article>
+        <article class="step-card featured"><span class="step-number">02</span><div class="step-icon">⌘</div><h3>Пройдите испытание</h3><p>Докажите, что способны отличить картошку от административного здания.</p><small>СТАТУС: НЕОБЯЗАТЕЛЬНО ОБЯЗАТЕЛЬНО</small></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-icon">▣</div><h3>Узнайте результат</h3><p>Вам будет присвоен предмет. Его ценность определит внутренний голос.</p><small>СТАТУС: В ПРОЦЕССЕ</small></article>
+      </div>
+    </section>
+
+    <section class="challenge section-wrap" id="secret-lab" aria-labelledby="challengeTitle">
+      <div class="challenge-visual"><div class="challenge-ring"></div><div class="challenge-object">🥔</div><div class="challenge-label">СЕКРЕТНО<br>НЕ ОЧЕНЬ</div><div class="challenge-coordinate">55°ХЗ / 00°НУ</div></div>
+      <div class="challenge-copy"><div class="eyebrow">05 / ВНЕПЛАНОВОЕ ИСПЫТАНИЕ</div><h2 id="challengeTitle">ОПРЕДЕЛИТЕ<br><em>КАРТОШКУ</em></h2><p>Среди объектов найдите картошку. Вопрос составлен экспертами, которые видели картошку. Один раз. Издалека.</p>
+        <div class="quiz-grid" id="quizGrid" role="group" aria-label="Выберите изображение картошки"></div>
+        <div class="quiz-footer"><span id="quizStatus" role="status" aria-live="polite">ВЫБРАНО: 0 / 1</span><button class="button button-primary button-small" id="checkQuiz" type="button">ПОДТВЕРДИТЬ</button></div>
+      </div>
+    </section>
+
+    <section class="bonus section-wrap" aria-labelledby="bonusTitle">
+      <div class="bonus-card"><div class="bonus-copy"><div class="eyebrow">06 / ДОПОЛНИТЕЛЬНЫЕ ПОЛНОМОЧИЯ</div><h2 id="bonusTitle">ВАМ ПОЛОЖЕНА<br><em>НЕОЖИДАННОСТЬ.</em></h2><p>Нажмите кнопку, чтобы получить случайное официальное сообщение от отдела, который не существует.</p><button class="button button-light" id="messageButton" type="button">ПОЛУЧИТЬ СООБЩЕНИЕ <span>✳</span></button></div><div class="bonus-stamp">НЕ<br>СПРАШИВАЙТЕ<br>ПОЧЕМУ</div><div class="bonus-spark">✳</div></div>
+    </section>
+
+    <section class="faq section-wrap" aria-labelledby="faqTitle">
+      <div class="section-heading"><div><div class="eyebrow">07 / СПРАВОЧНЫЙ ОТДЕЛ</div><h2 id="faqTitle">ВОПРОСЫ, КОТОРЫЕ <em>ВОЗНИКАЮТ.</em></h2></div><p>Ответы подготовлены заранее.<br>Вопросы — нет.</p></div>
+      <div class="faq-list">
+        <details><summary>Это настоящий розыгрыш? <span>＋</span></summary><p>Нет. Это шуточный интерактивный сайт. Призы существуют только в рамках игры и не выдаются в реальности.</p></details>
+        <details><summary>Почему среди призов кирпич? <span>＋</span></summary><p>Кирпич прошёл собеседование. Остальные кандидаты не пришли.</p></details>
+        <details><summary>Можно ли получить лодку? <span>＋</span></summary><p>В виртуальном смысле — да. В физическом смысле — это фотография лодки. Она не умеет выходить из экрана.</p></details>
+        <details><summary>Кто принимает решения? <span>＋</span></summary><p>Независимая комиссия: один кот, два голубя и бухгалтер на удалёнке.</p></details>
+        <details><summary>Почему кнопка иногда думает? <span>＋</span></summary><p>Она не думает. Это анимация. Но мы не хотим её расстраивать.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main section-wrap"><a class="logo" href="#top"><span class="logo-symbol">✳</span><span>SUPER<span class="logo-accent">PRIZE</span></span><sup>®</sup></a><p>© 2026 ОТДЕЛ НЕВЕРОЯТНЫХ СОВПАДЕНИЙ<br>ВСЕ СОВПАДЕНИЯ СЛУЧАЙНЫ. ОСОБЕННО ЗАПЛАНИРОВАННЫЕ.</p><button id="secretButton" class="footer-secret" type="button">НЕ НАЖИМАТЬ</button></div>
+    <div class="footer-bottom section-wrap"><span>СДЕЛАНО С НЕОБЪЯСНИМОЙ УВЕРЕННОСТЬЮ</span><a href="#top">НАВЕРХ ↑</a><span>ВЕРСИЯ 10.0.0 / ХЗ</span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal" id="prizeModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" id="modalClose" aria-label="Закрыть">×</button>
+      <div class="modal-overline">РЕШЕНИЕ КОМИССИИ № 000-ХЗ</div>
+      <div class="modal-symbol">✳</div><h2 id="modalTitle">РЕЗУЛЬТАТ УТВЕРЖДЁН.</h2>
+      <div class="modal-product"><img id="modalImage" src="assets/prize-02.jpg" alt=""><div><small>НАЗНАЧЕННЫЙ ОБЪЕКТ</small><h3 id="modalPrizeName">Картошка премиум-класса</h3><p id="modalPrizeDesc">Объект имеет неопределённую, но внушительную ценность.</p></div></div>
+      <p class="modal-disclaimer">Это шуточный результат внутри сайта. Никаких реальных призов, платежей или личных данных.</p>
+      <button class="button button-primary modal-confirm" id="modalConfirm" type="button">ПРИНЯТЬ НЕИЗБЕЖНОЕ <span>✓</span></button>
+    </section>
+  </div>
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
