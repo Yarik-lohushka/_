@@ -2,74 +2,79 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#100b1d">
-<title>SUPER PRIZE — портал невероятных выигрышей</title>
+<meta name="theme-color" content="#090611">
+<title>SUPER PRIZE — Отдел невероятных совпадений</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="ambient a1"></div><div class="ambient a2"></div>
-<header class="header">
-  <a class="logo" href="#top"><span>✦</span> SUPER PRIZE</a>
-  <nav><a href="#prizes">Призы</a><a href="#stages">Испытания</a><a href="#about">О проекте</a></nav>
-  <button class="small-btn" id="soundBtn" aria-label="Звук">♫ Звук: выкл.</button>
+<div class="noise"></div><div class="glow glow-a"></div><div class="glow glow-b"></div>
+<header class="topbar">
+ <a class="brand" href="#home"><span class="brand-mark">✦</span> SUPER<span>PRIZE</span><sup>®</sup></a>
+ <nav><a href="#prizes">Каталог</a><a href="#mission">Миссия</a><a href="#roulette">Колесо</a><a href="#faq">FAQ</a></nav>
+ <div class="top-right"><span class="live"><i></i> отдел работает</span><button class="tiny" id="menuBtn">☰</button></div>
 </header>
-
-<main id="top">
-<section class="hero wrap">
-  <div class="hero-text">
-    <div class="eyebrow"><i></i> МЕЖДУНАРОДНЫЙ ПОРТАЛ УДАЧИ</div>
-    <h1>Твоя удача.<br><em>Твои странные призы.</em></h1>
-    <p>Добро пожаловать в место, где возможно всё. Даже выиграть то, о чём ты никогда не просил.</p>
-    <button class="cta" data-go="stage1">Начать участие <b>↗</b></button>
-    <div class="hero-meta"><span>✦ 100% загадочности</span><span>⚡ 0% здравого смысла</span><span>♧ Без регистрации</span></div>
-  </div>
-  <div class="hero-visual">
-    <div class="halo"></div><div class="hero-orbit"></div>
-    <div class="hero-card"><div class="hero-card-top">PRIZE DROP <span>№ 001</span></div><div class="hero-emoji">🎁</div><div class="hero-card-bottom">НЕИЗВЕСТНОСТЬ ВНУТРИ</div></div>
-    <div class="float f1">★ УДАЧА ONLINE</div><div class="float f2">ТВОЙ ДЕНЬ?</div>
-  </div>
+<main id="home">
+<section class="hero shell">
+ <div class="hero-copy">
+  <div class="stamp"><span>✦</span> ОФИЦИАЛЬНО НЕОБЫЧНЫЙ РОЗЫГРЫШ <span>✦</span></div>
+  <h1>СЛИШКОМ<br><em>ХОРОШИЕ</em><br>ПРИЗЫ.</h1>
+  <p class="hero-lead">Мы тщательно отобрали предметы, которые вы не просили. Теперь они могут стать вашими.</p>
+  <div class="hero-actions"><button class="btn-primary" data-scroll="#roulette">Проверить свою удачу <b>↗</b></button><span class="micro-note">Решение комиссии окончательное. Комиссия — кот.</span></div>
+  <div class="hero-stats"><div><b>17</b><span>категорий<br>великолепия</span></div><div><b>0</b><span>объяснений<br>происходящего</span></div><div><b>∞</b><span>причин<br>удивиться</span></div></div>
+ </div>
+ <div class="hero-stage">
+  <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+  <div class="hero-product"><img src="assets/prize-01.jpg" alt="Загадочный главный приз"><div class="product-tag">ЛИМИТИРОВАННЫЙ<br>ВОЗДУХ PREMIUM</div></div>
+  <div class="floating-note note-top">ОДОБРЕНО<br><strong>СОМНИТЕЛЬНО</strong></div>
+  <div class="floating-note note-bottom">★ КАЧЕСТВО<br>ПОД ВОПРОСОМ</div>
+  <div class="burst">WOW<br><small>вероятно</small></div>
+ </div>
+ <div class="hero-bottomline"><span>◆ СЕРТИФИЦИРОВАННАЯ СЛУЧАЙНОСТЬ</span><span>◆ БЕЗ СМЫСЛА, НО С РАЗМАХОМ</span><span>◆ С 2026 ГОДА ИЛИ РАНЬШЕ</span></div>
 </section>
 
-<div class="ticker"><span>✦ СЛУЧАЙНОСТЬ</span><b>•</b><span>СЮРПРИЗЫ</span><b>•</b><span>НЕОЖИДАННОСТЬ</span><b>•</b><span>✦ СЛУЧАЙНОСТЬ</span></div>
+<section class="ticker"><div>ПРЕМИАЛЬНАЯ КАРТОШКА <b>✳</b> КИРПИЧ С БИОГРАФИЕЙ <b>✳</b> УТОЧКА РУКОВОДИТЕЛЬ <b>✳</b> ЛОДКА НА СЛУЧАЙ ЧЕГО <b>✳</b> ПРЕМИАЛЬНАЯ КАРТОШКА <b>✳</b> КИРПИЧ С БИОГРАФИЕЙ <b>✳</b></div></section>
 
-<section class="wrap section" id="prizes">
-  <div class="section-head"><div class="eyebrow">КАТАЛОГ НЕВЕРОЯТНОГО</div><h2>Призы, которые <em>тебя не просили</em></h2><p>Коллекция уникальных предметов. Некоторые из них даже существуют.</p></div>
-  <div class="prize-grid" id="prizeGrid"></div>
-  <div class="center"><button class="outline-btn" id="morePrizes">Показать ещё странностей ↻</button></div>
+<section class="section shell" id="prizes">
+ <div class="section-head"><div><span class="kicker">01 / ОТДЕЛ МАТЕРИАЛЬНЫХ ЦЕННОСТЕЙ</span><h2>КАТАЛОГ <em>ВОЗМОЖНОГО</em></h2></div><p>Каждый предмет прошёл строгую проверку.<br>Проверяющий до сих пор не отвечает.</p></div>
+ <div class="filter-row"><span>ПОПУЛЯРНЫЕ ОБЪЕКТЫ</span><span class="filter-label">СОРТИРОВКА: ПО СТЕПЕНИ СТРАННОСТИ ↓</span></div>
+ <div class="prize-grid" id="prizeGrid"></div>
+ <div class="center"><button class="btn-outline" id="loadMore">Загрузить ещё предметы <span>＋</span></button></div>
 </section>
 
-<section class="wrap section" id="stages">
-  <div class="section-head"><div class="eyebrow">ПУТЬ ПОБЕДИТЕЛЯ</div><h2>Пройди <em>проверку удачи</em></h2><p>Каждый этап приближает тебя к… чему-то.</p></div>
-  <div class="progress"><div id="progressFill"></div></div><div class="progress-label"><span id="progressText">Этап 0 из 7</span><span id="progressPct">0%</span></div>
-  <div class="stage-card" id="stageCard">
-    <div class="stage-number" id="stageNumber">ЭТАП 01 / 07</div>
-    <h3 id="stageTitle">Проверка на готовность</h3>
-    <p id="stageDesc">Насколько сильно ты хочешь получить невероятный приз?</p>
-    <div id="stageBody" class="stage-body"></div>
-    <div class="stage-actions"><button class="cta" id="stageNext">Продолжить <b>→</b></button><span class="micro" id="stageHint">Ошибиться невозможно. Наверное.</span></div>
-  </div>
+<section class="roulette-section" id="roulette">
+ <div class="shell roulette-layout">
+  <div class="roulette-copy"><span class="kicker">02 / МЕХАНИЗМ СУДЬБЫ</span><h2>КОЛЕСО<br><em>НЕИЗБЕЖНОСТИ</em></h2><p>Система случайным образом выберет ваш дальнейший жизненный маршрут. Мы не несём ответственности за маршрут.</p><div class="roulette-warning">⚠ ВНИМАНИЕ: колесо может выбрать картошку.</div><button class="btn-primary" id="spinBtn">ЗАПУСТИТЬ РОК <b>↻</b></button></div>
+  <div class="wheel-wrap"><div class="wheel-pointer">▼</div><div class="wheel" id="wheel"><div class="wheel-center">SP<br><small>™</small></div><div class="wheel-labels"><span>🥔</span><span>🦆</span><span>🧱</span><span>👑</span><span>🧦</span><span>🚣</span><span>📦</span><span>🦈</span></div></div><div class="wheel-shadow"></div><div class="wheel-result" id="wheelResult">ОЖИДАНИЕ РЕШЕНИЯ СУДЬБЫ</div></div>
+ </div>
 </section>
 
-<section class="wrap section bonus">
-  <div class="bonus-copy"><div class="eyebrow">СЛУЧАЙНЫЙ СЮРПРИЗ</div><h2>Не знаешь, чего хочешь?<br><em>Мы тоже.</em></h2><p>Нажми кнопку и получи предмет, который изменит… ничего.</p><button class="cta" id="randomBtn">Выдать случайный приз ✦</button></div>
-  <div class="bonus-result" id="randomResult"><div class="bonus-icon">?</div><strong>ТВОЙ СЮРПРИЗ ЗДЕСЬ</strong><small>Нажми кнопку слева</small></div>
+<section class="section shell" id="mission">
+ <div class="section-head"><div><span class="kicker">03 / ПРОЦЕДУРА ПОЛУЧЕНИЯ</span><h2>ТРИ ШАГА ДО <em>НЕИЗВЕСТНОСТИ</em></h2></div><p>Процедура проста. Последствия не уточнялись.</p></div>
+ <div class="steps-grid">
+  <article class="step-card"><span class="step-no">01</span><div class="step-icon">🎯</div><h3>Выберите судьбу</h3><p>Нажмите кнопку. Система сделает вид, что всё рассчитала.</p><small>СТАТУС: ПРИНЯТО</small></article>
+  <article class="step-card step-highlight"><span class="step-no">02</span><div class="step-icon">🧠</div><h3>Пройдите испытание</h3><p>Докажите, что способны отличить картошку от административного здания.</p><small>СТАТУС: НЕОБЯЗАТЕЛЬНО ОБЯЗАТЕЛЬНО</small></article>
+  <article class="step-card"><span class="step-no">03</span><div class="step-icon">📦</div><h3>Узнайте результат</h3><p>Вам будет присвоен приз. Его ценность определит внутренний голос.</p><small>СТАТУС: В ПРОЦЕССЕ</small></article>
+ </div>
 </section>
 
-<section class="wrap section" id="about">
-  <div class="section-head"><div class="eyebrow">ВАЖНАЯ ИНФОРМАЦИЯ</div><h2>Официально <em>неофициально</em></h2></div>
-  <div class="info-grid"><div><b>01 / Честность</b><p>Случайность настолько случайная, что удивляется даже сама себе.</p></div><div><b>02 / Доставка</b><p>Возможна доставка воображаемым транспортом.</p></div><div><b>03 / Поддержка</b><p>Наш оператор — искусственный интеллект на основе варёной картошки.</p></div></div>
+<section class="challenge shell">
+ <div class="challenge-art"><div class="challenge-ring"></div><div class="challenge-emoji">🕵️‍♂️</div><div class="challenge-sticker">СЕКРЕТНО<br>НЕ ОЧЕНЬ</div></div>
+ <div class="challenge-content"><span class="kicker">04 / ВНЕПЛАНОВОЕ ИСПЫТАНИЕ</span><h2>ОПРЕДЕЛИТЕ<br><em>КАРТОШКУ</em></h2><p>Среди представленных объектов найдите картошку. Вопрос составлен экспертами, которые видели картошку.</p><div class="captcha-grid" id="captchaGrid"></div><div class="challenge-bottom"><span id="captchaStatus">Выбрано: 0 / 1</span><button class="btn-primary" id="captchaCheck">ПОДТВЕРДИТЬ</button></div></div>
+</section>
+
+<section class="section shell" id="faq">
+ <div class="section-head"><div><span class="kicker">05 / ВАЖНЫЕ ВОПРОСЫ</span><h2>ЧАСТО ЗАДАВАЕМЫЕ <em>ВОПРОСЫ</em></h2></div><p>Ответы подготовлены заранее.<br>Вопросы — нет.</p></div>
+ <div class="faq-list">
+  <details><summary>Это настоящий розыгрыш? <span>＋</span></summary><p>Нет. Это шуточный интерактивный сайт. Призы существуют только в рамках игры и не выдаются в реальности.</p></details>
+  <details><summary>Почему среди призов кирпич? <span>＋</span></summary><p>Кирпич прошёл собеседование. Остальные кандидаты не пришли.</p></details>
+  <details><summary>Можно ли получить лодку? <span>＋</span></summary><p>В виртуальном смысле — да. В физическом смысле — обратитесь к ближайшему водоёму и не забудьте весла.</p></details>
+  <details><summary>Кто принимает решения? <span>＋</span></summary><p>Независимая комиссия. Её состав: один кот, два голубя и бухгалтер на удалёнке.</p></details>
+ </div>
 </section>
 </main>
-
-<footer><a class="logo" href="#top">✦ SUPER PRIZE</a><span>Шуточный интерактивный сайт. Настоящие призы не разыгрываются.</span><button class="text-btn" id="secretBtn">не нажимать</button></footer>
+<footer class="footer shell"><a class="brand" href="#home"><span class="brand-mark">✦</span> SUPER<span>PRIZE</span><sup>®</sup></a><p>© 2026 Отдел невероятных совпадений. Все совпадения случайны, особенно запланированные.</p><button class="secret-button" id="secretBtn">НЕ НАЖИМАТЬ</button></footer>
 
 <div class="toast" id="toast"></div>
-<div class="modal" id="modal" aria-hidden="true"><div class="modal-card">
-  <div class="modal-spark">✦ ✧ ✦</div><div class="eyebrow" id="modalEyebrow">РЕЗУЛЬТАТ ПОДТВЕРЖДЁН</div>
-  <h2 id="modalTitle">НЕВЕРОЯТНО!</h2><p id="modalDesc">Система завершила проверку.</p>
-  <div class="final-prize"><div id="finalEmoji">🥔</div><small>ВАШ ЭКСКЛЮЗИВНЫЙ РЕЗУЛЬТАТ</small><strong id="finalName">Картошка с характером</strong><span id="finalCaption">Серия ограничена. Причины тоже.</span></div>
-  <button class="cta" id="modalClose">Принять судьбу <b>✓</b></button>
-  <small class="disclaimer">Это шуточный сайт, никаких реальных выигрышей и платежей нет.</small>
-</div></div>
+<div class="modal" id="modal"><div class="modal-card"><button class="modal-x" id="modalX">×</button><div class="modal-crown">♛</div><span class="kicker">РЕШЕНИЕ КОМИССИИ № 000-ХЗ</span><h2 id="modalTitle">ПОЗДРАВЛЯЕМ.</h2><div class="modal-prize"><img id="modalImage" src="assets/prize-02.jpg" alt=""><div><small>ВАШ НАЗНАЧЕННЫЙ ПРЕДМЕТ</small><strong id="modalPrize">Картошка с амбициями</strong><p id="modalDesc">Объект имеет неопределённую, но внушительную ценность.</p></div></div><p class="modal-note">Это шуточный результат. Никаких реальных призов, платежей или личных данных.</p><button class="btn-primary" id="modalOk">ПРИНЯТЬ РЕШЕНИЕ <b>✓</b></button></div></div>
 <script src="script.js"></script>
 </body></html>
